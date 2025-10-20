@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "VITE_CODESPACE_NAME=$CODESPACE_NAME VITE_CODESPACE_DOMAIN=$GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
